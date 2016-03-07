@@ -1,25 +1,272 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="maB-LQ-Qj1">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Tab Bar Controller-->
+        <scene sceneID="j2X-Sg-bpm">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tabBarController id="maB-LQ-Qj1" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="c3m-a5-2yl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="fa1-az-k5D" kind="relationship" relationship="viewControllers" id="fyj-NV-7wG"/>
+                        <segue destination="h3p-DT-S8h" kind="relationship" relationship="viewControllers" id="aeS-yg-saD"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4n6-bi-rMW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-1445" y="359"/>
+        </scene>
+        <!--服务器-->
+        <scene sceneID="cPo-bj-acS">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TqV-bH-kcq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="fa1-az-k5D" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="服务器" id="cfb-yK-Fdm"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dKG-r1-nqx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="AGY-T2-4PS" kind="relationship" relationship="rootViewController" id="pSz-K9-h8v"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-918.5" y="224.5"/>
+        </scene>
+        <!--客户端-->
+        <scene sceneID="4hG-Yw-ibA">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z5n-lk-kPE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController id="h3p-DT-S8h" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="客户端" id="Jsd-2z-HP3"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="MNd-oV-NEs">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="2X4-2z-12C" kind="relationship" relationship="rootViewController" id="y5H-zG-Z0G"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="-918.5" y="952.5"/>
+        </scene>
+        <!--客户端-->
+        <scene sceneID="PNQ-pz-uvS">
+            <objects>
+                <viewController id="2X4-2z-12C" customClass="ClientViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="xgI-yw-dG2"/>
+                        <viewControllerLayoutGuide type="bottom" id="X0z-9l-xLt"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5Ws-XH-ZbA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="IP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yCY-ez-yt9">
+                                <rect key="frame" x="90" y="133" width="15" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入内容" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LvE-hf-QhV">
+                                <rect key="frame" x="54" y="228" width="210" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GO0-Lo-M4T">
+                                <rect key="frame" x="272" y="269" width="60" height="30"/>
+                                <state key="normal" title="接收消息"/>
+                                <connections>
+                                    <action selector="receiveMessageAction:" destination="2X4-2z-12C" eventType="touchUpInside" id="Ug5-r1-dQ4"/>
+                                    <action selector="receiveMessageAction:" destination="AGY-T2-4PS" eventType="touchUpInside" id="wVS-YO-b65"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VHm-hC-vfz">
+                                <rect key="frame" x="278" y="227" width="60" height="30"/>
+                                <state key="normal" title="发送消息"/>
+                                <connections>
+                                    <action selector="sendMessageAction:" destination="2X4-2z-12C" eventType="touchUpInside" id="8PM-3x-GS7"/>
+                                    <action selector="sendMessageAction:" destination="AGY-T2-4PS" eventType="touchUpInside" id="FAV-d0-MEq"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="信息展示" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="AP3-lW-L9X">
+                                <rect key="frame" x="54" y="321" width="255" height="289"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="127.0.0.1" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dMN-Pl-2fl">
+                                <rect key="frame" x="115" y="129" width="155" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="端口号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Kp-xE-d4K">
+                                <rect key="frame" x="54" y="178" width="51" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="8000" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kU0-VO-6JC">
+                                <rect key="frame" x="115" y="174" width="155" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fpi-Qw-LDv">
+                                <rect key="frame" x="300" y="174" width="30" height="30"/>
+                                <state key="normal" title="链接"/>
+                                <connections>
+                                    <action selector="connectServerAction:" destination="2X4-2z-12C" eventType="touchUpInside" id="0Sb-6F-XdD"/>
+                                    <action selector="sendMessageAction:" destination="AGY-T2-4PS" eventType="touchUpInside" id="TME-L7-2TH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="客户端" id="sbc-qx-pdh"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="addressTF" destination="dMN-Pl-2fl" id="wfG-hq-Hs4"/>
+                        <outlet property="messageTF" destination="LvE-hf-QhV" id="NBe-kg-V3P"/>
+                        <outlet property="portTF" destination="kU0-VO-6JC" id="u5B-5O-Fpt"/>
+                        <outlet property="textView" destination="AP3-lW-L9X" id="me3-26-S78"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4fH-hA-Fxy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-407.5" y="952.5"/>
+        </scene>
+        <!--服务器-->
+        <scene sceneID="dxb-1P-YLE">
+            <objects>
+                <viewController id="AGY-T2-4PS" customClass="ServerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4dp-d5-1iE"/>
+                        <viewControllerLayoutGuide type="bottom" id="t29-MW-sRE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pyw-5O-wKV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="端口号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pkA-Zu-xYz">
+                                <rect key="frame" x="49" y="136" width="51" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入内容" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MQ6-uB-MB0">
+                                <rect key="frame" x="49" y="200" width="210" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ddt-bv-jOD">
+                                <rect key="frame" x="292" y="132" width="30" height="30"/>
+                                <state key="normal" title="监听"/>
+                                <connections>
+                                    <action selector="listenAction:" destination="AGY-T2-4PS" eventType="touchUpInside" id="mEM-k3-6sO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VwY-P2-Hym">
+                                <rect key="frame" x="267" y="272" width="60" height="30"/>
+                                <state key="normal" title="接收消息"/>
+                                <connections>
+                                    <action selector="receiveMessageAction:" destination="AGY-T2-4PS" eventType="touchUpInside" id="tGe-Gn-NZ7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aMo-tv-te0">
+                                <rect key="frame" x="267" y="200" width="60" height="30"/>
+                                <state key="normal" title="发送消息"/>
+                                <connections>
+                                    <action selector="sendMessageAction:" destination="AGY-T2-4PS" eventType="touchUpInside" id="lBG-Ok-nzJ"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="信息展示" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="MiP-ih-vja">
+                                <rect key="frame" x="49" y="324" width="255" height="286"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="8000" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kRz-8q-XTA">
+                                <rect key="frame" x="110" y="132" width="133" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="服务器" id="2cZ-hj-C4C"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="listenAction" destination="Ddt-bv-jOD" id="Qcb-RE-LuD"/>
+                        <outlet property="messageTF" destination="MQ6-uB-MB0" id="R9b-hY-4E2"/>
+                        <outlet property="portTF" destination="kRz-8q-XTA" id="oII-V5-cM0"/>
+                        <outlet property="receiveMessage" destination="VwY-P2-Hym" id="ibx-rW-txC"/>
+                        <outlet property="sendMessageAction" destination="aMo-tv-te0" id="x7R-fA-GOR"/>
+                        <outlet property="textView" destination="MiP-ih-vja" id="paj-1g-tBL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ubZ-ZM-hAh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="QJJ-UP-sZ3">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="端口号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x8d-8b-YoX">
+                            <rect key="frame" x="49" y="136" width="51" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入内容" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zct-Ge-u0z">
+                            <rect key="frame" x="49" y="200" width="210" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yso-1X-c5T">
+                            <rect key="frame" x="292" y="132" width="30" height="30"/>
+                            <state key="normal" title="监听"/>
+                            <connections>
+                                <action selector="listenAction:" destination="AGY-T2-4PS" eventType="touchUpInside" id="E6U-rX-MdZ"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8e2-de-8Yq">
+                            <rect key="frame" x="267" y="272" width="60" height="30"/>
+                            <state key="normal" title="接受消息"/>
+                            <connections>
+                                <action selector="receiveMessageAction:" destination="AGY-T2-4PS" eventType="touchUpInside" id="IaE-4n-Dit"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nhu-he-yyp">
+                            <rect key="frame" x="267" y="200" width="60" height="30"/>
+                            <state key="normal" title="发送消息"/>
+                            <connections>
+                                <action selector="sendMessageAction:" destination="AGY-T2-4PS" eventType="touchUpInside" id="tAR-Zj-zzR"/>
+                            </connections>
+                        </button>
+                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="信息展示" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="OQK-dO-z7S">
+                            <rect key="frame" x="49" y="324" width="255" height="140"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                        </textView>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qmb-z0-qEv">
+                            <rect key="frame" x="110" y="132" width="133" height="30"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </objects>
+            <point key="canvasLocation" x="-399.5" y="224.5"/>
         </scene>
     </scenes>
 </document>
