@@ -10,6 +10,7 @@
 		21CF862F07AA192A73879FAD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ACCBF546702C098F7327F32E /* libPods.a */; };
 		5C3037871C8D2F8D00700F11 /* ServerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3037861C8D2F8D00700F11 /* ServerViewController.m */; };
 		5C30378A1C8D526E00700F11 /* ClientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C3037891C8D526E00700F11 /* ClientViewController.m */; };
+		5C5937B81D3377F300CC1ED7 /* Singleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C5937B71D3377F300CC1ED7 /* Singleton.m */; };
 		5CEE44101C8D26DE006704A4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CEE440F1C8D26DE006704A4 /* main.m */; };
 		5CEE44131C8D26DE006704A4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CEE44121C8D26DE006704A4 /* AppDelegate.m */; };
 		5CEE44161C8D26DE006704A4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CEE44151C8D26DE006704A4 /* ViewController.m */; };
@@ -42,6 +43,8 @@
 		5C3037861C8D2F8D00700F11 /* ServerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerViewController.m; sourceTree = "<group>"; };
 		5C3037881C8D526E00700F11 /* ClientViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClientViewController.h; sourceTree = "<group>"; };
 		5C3037891C8D526E00700F11 /* ClientViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClientViewController.m; sourceTree = "<group>"; };
+		5C5937B61D3377F300CC1ED7 /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
+		5C5937B71D3377F300CC1ED7 /* Singleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Singleton.m; sourceTree = "<group>"; };
 		5CEE440B1C8D26DE006704A4 /* LessonSocket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LessonSocket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CEE440F1C8D26DE006704A4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5CEE44111C8D26DE006704A4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -118,6 +121,8 @@
 				5CEE44121C8D26DE006704A4 /* AppDelegate.m */,
 				5CEE44141C8D26DE006704A4 /* ViewController.h */,
 				5CEE44151C8D26DE006704A4 /* ViewController.m */,
+				5C5937B61D3377F300CC1ED7 /* Singleton.h */,
+				5C5937B71D3377F300CC1ED7 /* Singleton.m */,
 				5C3037851C8D2F8D00700F11 /* ServerViewController.h */,
 				5C3037861C8D2F8D00700F11 /* ServerViewController.m */,
 				5C3037881C8D526E00700F11 /* ClientViewController.h */,
@@ -358,6 +363,7 @@
 				5CEE44161C8D26DE006704A4 /* ViewController.m in Sources */,
 				5CEE44131C8D26DE006704A4 /* AppDelegate.m in Sources */,
 				5CEE44101C8D26DE006704A4 /* main.m in Sources */,
+				5C5937B81D3377F300CC1ED7 /* Singleton.m in Sources */,
 				5C3037871C8D2F8D00700F11 /* ServerViewController.m in Sources */,
 				5C30378A1C8D526E00700F11 /* ClientViewController.m in Sources */,
 			);
